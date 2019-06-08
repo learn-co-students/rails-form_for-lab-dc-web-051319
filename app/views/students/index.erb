@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Index</title>
+</head>
+<body>
+    <h1>STUDENT INDEX</h1>
+    <% @students.each do |student| %>
+    <%= link_to student.to_s, student_path(student) %><br>
+    <% end %>
+
+</body>
+</html>
