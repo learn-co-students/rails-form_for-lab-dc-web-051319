@@ -1,0 +1,9 @@
+<h1> All School Classes: </h1>
+
+<% @schools.each.with_index(1) do |school, i| %>
+  <label>Class Number: <%= i %></label><br>
+  <label> Class Title: </label>
+  <%= school.title %><br>
+  <label> Class Room Number: </label>
+  <%= school.room_number %><br>
+<% end %>
